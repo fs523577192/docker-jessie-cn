@@ -6,9 +6,6 @@ RUN sed -i "s/httpredir.debian.org/mirrors.aliyun.com/g" /etc/apt/sources.list \
     && apt-get install --no-install-recommends --no-install-suggests -y \
                         curl \
                         ca-certificates \
-                        autoconf \
-                        gcc \
-                        make \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["\bin\bash"]
